@@ -39,7 +39,7 @@ else
   LOG = Logger.new(STDOUT)
   LOG.level = Logger::INFO
   LOG.formatter = proc { |sev, ts, progname, msg|
-    "[#{ts.strftime('%Y-%b-%d %H:%m:%S')}] #{sev.upcase}  #{msg}\n"
+    "[#{ts.strftime('%Y-%b-%d %H:%M:%S')}] #{sev.upcase}  #{msg}\n"
   }
 end
 
